@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{indentfirst}
+\usepackage{geometry}
+\usepackage{titlesec}
+\geometry{
+  a4paper,
+  top=2cm,      
+  bottom=2cm,  
+  left=2.5cm,       
+  right=1.5cm,     
+}
+
+\titleformat{\section}
+  {\normalfont\bfseries\centering}
+  {}{0pt}{}
+
+\title{Избранные произведения}
+\author{ДАНИИЛ ХАРМС}
+\date{}
+
+\begin{document}
+
+\setlength{\parindent}{1.5cm}
+\maketitle
+\vspace*{-\baselineskip}
+
+\input{chapters/story1.tex}
+
+\section*{\centering СКАЗКА}
+\input{chapters/story2.tex}
+
+\section*{\centering СЕВЕРНАЯ СКАЗКА}
+\input{chapters/story3.tex}
+
+\input{chapters/story4.tex}
+
+\input{chapters/story5.tex}
+
+\section*{\centering КИРПИЧ}
+\input{chapters/story6.tex}
+
+\section*{\centering ПЬЕСА}
+\input{chapters/story7.tex}
+
+\section*{\centering ПРОИСШЕСТВИЕ НА УЛИЦЕ}
+\input{chapters/story8.tex}
+
+\end{document}
