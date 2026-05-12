@@ -1,0 +1,43 @@
+\documentclass{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage[12pt]{extsizes}
+\usepackage{fancyvrb}
+\usepackage{indentfirst}
+\usepackage[
+  left=2cm, right=2cm, top=2cm, bottom=2cm, headsep=0.2cm, footskip=0.6cm, bindingoffset=0cm
+]{geometry}
+\usepackage[english,russian]{babel}
+
+\begin{document}
+\section*{Вариант 10}
+
+Решение уравнений с учетом краевых условий представим в виде
+
+\[
+W = \sum_{k=1}^{\infty} \left[ (R_k(\tau) + R_k^0) \cos \frac{(2k-1)\pi\xi}{2} + Q_k(\tau) \sin k\pi\xi \right]. \qquad (1)
+\]
+
+Верхний индекс 0 в (1) означает решение, соответствующее постоянному уровню давления $p_0$, независищему от $\tau$.
+
+Принимая во внимание линейность предыдущего уравнения и подставляя в него (1), найденное выражение для давления, а также раскладывая оставшиеся члены, входящие в его правую часть в ряды по тригонометрическим функциям, из полученного уравнения запишем выражение для составляющей, независищей от времени $R_k^0$
+
+\[
+R_k^0 = (2\ell / ((2k-1)\pi))^4 (4(-1)^{k+1} / ((2k-1)\pi)) p_0(Dw_m)^{-1},
+\]
+
+и уравнения для определения $R_k(\tau)$ и $Q_k(\tau)$
+
+\[
+\begin{aligned} 
+a_{1ck} w_m R_k + a_{2ck} w_m \frac{dR_k}{d\tau} &= \frac{2(-1)^{k+1}}{(2k-1)\pi D} p_m^+ f_p(\tau), \tag{2} \\ 
+a_{1sk} w_m Q_k + a_{2sk} w_m \frac{dQ_k}{d\tau} &= \frac{(-1)^{k+1}}{k\pi D} p_m^+ f_p(\tau). \tag{3}
+\end{aligned}
+\]
+
+\end{document}
